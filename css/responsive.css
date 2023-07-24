@@ -1,3 +1,8 @@
+@media (max-width: 1700px){
+  .slide img{
+    height: 100%;
+  }
+}
 @media (max-width: 1200px) {
   html,
   body {
