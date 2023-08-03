@@ -14,8 +14,8 @@ body{
 }
 .nav{
     width: 25%;
-    height: 500vh;
-    background-color:white;
+    height: 852.3vh;
+    background-color:rgb(168, 168, 168);
     font-family: 'Courier New', Courier, monospace;
     padding: 2rem;
     z-index: 1;
@@ -697,7 +697,7 @@ border-radius: 100px;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
-    bo
+
 }
 .login-register p a{
     color: black;
