@@ -1,8 +1,13 @@
-function reg(){
- document.querySelector(".register-form").style.display="flex";
- document.querySelector(".loginn-form").style.display="none";
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = ()=>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active')
 }
-function lg(){
-    document.querySelector(".register-form").style.display="none";
-    document.querySelector(".loginn-form").style.display="flex";
-   }
+
+
+window.onscroll = ()=>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active')
+}
