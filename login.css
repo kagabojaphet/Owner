@@ -65,7 +65,7 @@
 form{
     display: grid;
     gap: 2rem;
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.349),brown,brown,rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.459));
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.459),brown,brown,rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.459));
     border-radius: 8px;
     padding: 2rem 2rem;
 }
@@ -99,7 +99,12 @@ a{
     font-size: 1rem;
     font-weight: 700;
     color: white;
+    transition: all .4s;
 
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 1.2rem;
 }
 @keyframes slide{
     0%{
