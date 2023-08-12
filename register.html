@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KFashion</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./login.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link
       rel="stylesheet"
@@ -24,53 +24,48 @@
     />
   </head>
   <body>
-    <div class="main-container">
-      <div class="nav">
-        <div class="fixed">
-          <div class="logo">
-            <h1>KFashion</h1>
+    <div class="slider-login">
+      <div class="figure-login">
+          <div class="slide-login">
+              <!-- <h1>car</h1> -->
+              <img src="./images/l.jpeg" alt="">
           </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">About</a></li>
-              <li><a href="services.html">Service</a></li>
-              <li><a href="trend.html">Trending</a></li>
-              <li><a href="category.html">Category</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
+          <div class="slide-login">
+              <!-- <h1>laptop</h1> -->
+              <img src="./images/f3.webp" alt="">
           </div>
+          <div class="slide-login">
+              <!-- <h1>flower</h1> -->
+              <img src="./images/fa2.jpeg" alt="">
+          </div>
+          <div class="slide-login">
+              <!-- <h1>the way</h1> -->
+              <img src="./images/f5.jpeg" alt="">
+          </div>
+      </div>
+      <div class="opacity">
+        <div class="form-container">
+          <h2>Register</h2>
+          <form action="">
+            
+            <div class="input-box">
+            <label for="">Username</label>
+            <input type="text" id="username" required>
+          </div>
+          <div class="input-box">
+            <label for="">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="input-box">
+            <label for="">Password</label>
+            <input type="password" id="password" required>
+          </div>
+          <button type="submit">Sign-up</button>
+          <p>Already have an account?<a href="./index.html">Login</a></p>
+          </form>
         </div>
       </div>
-<div class="register-form">
-    <h2>Register</h2>
-    <div class="input-box">
-      <input type="text" />
-      <label for="">Email</label>
-    </div>
-    <div class="input-box">
-      <input type="text" />
-      <label for="">Username</label>
-    </div>
-
-    <div class="input-box">
-      <input type="password" />
-      <label for="">Password</label>
-    </div>
-
-    <div class="check-box">
-      <label for="">
-        <input type="checkbox" />
-        I Agree to the terms & condition
-      </label>
-    </div>
-    <button class="btn" type="submit">Register</button>
-    <div class="login-register">
-      <p>
-        Already I have an account?<button  type="submit"
-          class="login-link" onclick="lg()"
-          >Login</button
-        >
-      </p>
-    </div>
+  </div>
+  <script src="./register.js"></script>
+</body>
+</html>
