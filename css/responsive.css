@@ -19,7 +19,7 @@ header.active{
   left: 0;
 }
 body #menu-bars{
-  display: flex;
+  display: initial;
 }
   }
 
