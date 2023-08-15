@@ -5,6 +5,23 @@
     overflow-x: hidden;
   }
 }
+@media (max-width: 992px){
+  .conact{
+    padding: 5rem;
+  }
+  .container{
+    flex-direction: column;
+
+  }
+  .container .contact-info{
+    margin-bottom: 4rem;
+  }
+  .container .contact-info,
+  .contact-form{
+    width: 100%;
+  }
+  
+}
   @media (max-width: 546px) {
     html{
       font-size: 55%;

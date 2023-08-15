@@ -589,189 +589,133 @@ border-radius: 100px;
  .contact-container{
     width: 100%;
     padding-bottom: 2rem;
-    background-color:white;
+    /* background-color:white; */
+    background-image: url("https://images.pexels.com/photos/9594673/pexels-photo-9594673.jpeg?");
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-repeat: no-repeat;
+   
     
  }
  .contact{
-    background-color: rgb(189, 189, 189);
-    border-radius: 5px;
-    margin: 2rem;
-    
- }
- .contact-info{
-    text-align: center;
- }
- .info-title{
-    height: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 2rem;
- }
- .contact-form{
-    height: 50%;
-  
-    text-align: center;
-    text-align: center;
- }
- .forms{
-    height: 100%;
-    padding: 2rem 0;
- }.input input{
-    margin: 0.4rem 0;
-    padding: 0.4rem 2rem;
-    border-radius: 5px;
-    border: none;
- }
- .input textarea{
-    border: none;
-    border-radius: 5px;
- }
- .input button{
-    padding: 0.4rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
- }
-
- .login-container{
-    width: 100%;
-    background-color: white;
- }
-
- .login{
-    margin: 2rem 2rem;
-    width: 95%;
-    background-color: white;
+    position: relative;
     display: flex;
     justify-content: center;
-    padding-bottom: 4.5rem;
- }
- form{
-    width: 450px;
-    background-color:rgb(189, 189, 189);
-    padding: 0 2rem;
-    text-align: center; 
-    box-shadow: 0 0 30px black;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 5rem;
-  
- }
- .loginn-form{
-    width: 100%;
-    border-radius: 10px;
+    padding: 50px 100px;
+    align-items: center;
     flex-direction: column;
  }
- .register-form{
-    width: 100%;
-    border-radius: 10px;
-    flex-direction: column;
-    display: none;
+ .contact .content{
+    max-width: 900px;
+    text-align: center;
+
  }
-.input-box{
+ .contact .content p{
+   color: black;
+   font-weight: 600;
+   font-size: 1.3rem;
+ }
+ .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+ }
+ .container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+ .container .contact-info .box{
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+ }
+ .container .contact-info .icon{
+    min-width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size: 2rem;
+    border-radius: 60%;
+    color: white;
+ }
+ .container .contact-info .text{
+    display: flex;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: black;
+    flex-direction: column;
+    font-weight: 400;
+ }
+ .container .contact-info .text h3{
+    font-weight: 700;
+    color: brown;
+ }
+ .contact-form{
+    /* width: 40%; */
+    padding: 4rem;
+    background: white;
+    border-radius: .5rem;
+ }
+ .contact-form h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(to right,black,black,brown,brown,brown);
+    -webkit-background-clip: text;
+ }
+ .contact-form .input-box{
     position: relative;
     width: 100%;
-    height: 50px;
+    margin-top: 1rem;
+ }
+ .contact-form .input-box input,
+ .contact-form .input-box textarea{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    border: none;
     border-bottom: 2px solid black;
-    margin: 30px 0;
-}
-.input-box label{
+    outline: none;
+    resize: none;
+ }
+ .contact-form .input-box span{
     position: absolute;
-    top: 0%;
-    left: 5px;
-    transform: translateY(-505);
-    font-size: 1rem;
-    color: black;
-    font-weight: 500;
+    left: 0;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    font-size: 1.6rem;
     pointer-events: none;
-    transition: all.5s;
-}
-.input-box input:hover~label,
-.input-box input:hover~label{
-    top: -7px;
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: black;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-.input-box .icon{
-    position: absolute;
-    right: 8px;
-    font-size: 1.2rem;
-    color: black;
-    line-height: 57px;
-}
-.check-box{
-    font-size: .9rem;
-    color: black;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
-.check-box label input{
-    accent-color: black;
-    margin-right: 3px;
-
-}
-.check-box a{
-    color: black;
-    text-decoration: none;
-
-}
-.check-box a:hover{
-    text-decoration: underline;
-
-}
-.btn{
-    width: 100%;
-    height: 45px;
+    transition: all .5s;
+    color: #666;
+ }
+ .contact-form .input-box input:focus ~span,
+ .contact-form .input-box input:valid ~span,
+ .contact-form .input-box textarea:focus ~span,
+ .contact-form .input-box textarea:valid ~span{
+    color: brown;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transform: translatey(-2rem);
+ }
+ .contact-form .input-box input[type="submit"]{
+    width: 10rem;
     background:black;
-    outline: none;
     color: white;
     border: none;
-    border-radius: 6px;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all.5s;
-}
-.btn:hover{
-    background-color: brown;
-    color: white;
-}
-.login-register{
-    font-size: .9rem;
-    color:black;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
-
-}
-.login-register p a{
-    color: black;
-    text-decoration: none;
+    /* padding: 1rem; */
+    font-size: 1.8rem;
+    transition: .3s;
     font-weight: 600;
-}
-.login-register p a:hover{
-    text-decoration: underline;
-
-}
-.login-link{
-    border: none;
-    font-size: 1rem;
-    font-weight: 900;
-    cursor: pointer;
-
-}
-.login-link:hover{
-    text-decoration: underline;
-}
+    border-radius: .5rem;
+ }
+ .contact-form .input-box input[type="submit"]:hover{
+    background: brown;
+    color: black;
+ }
