@@ -222,6 +222,7 @@ figure {
 }
 .heading-title {
   position: relative;
+  font-size: 3rem;
 }
 .heading-title::after {
   position: absolute;
@@ -423,17 +424,6 @@ figure {
 #imgs4:checked ~ .ims4 {
   margin-left: -300%;
 }
-@media screen and (max-width: 666px) {
-  .about-info {
-    flex-direction: column;
-  }
-  .slider {
-    width: 0%;
-  }
-  .slider {
-    width: 100%;
-  }
-}
 .services {
   width: 100%;
   background-color: #f9f8f8f8;
@@ -461,19 +451,30 @@ figure {
 }
 .services-card .card-one h2 {
   margin: 1.5rem 0;
-  font-size: 2.8rem;
+  font-size: 2rem;
+  font-weight: 600;
   color: brown;
 }
 .services-card .card-one p {
   font-size: 1.4rem;
   line-height: 1.5;
   padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+.services-card .card-one .button{
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 767px) {
-  .services-card {
-    flex-direction: column;
-  }
+.services-card .card-one .button a{
+padding: 1rem 2rem;
+background: brown;
+color: black;
+font-size: 1.2rem;
+border-radius: .5rem;
+transition: all .4s;
+}
+.services-card .card-one .button a:hover{
+  background:black;
+  color: white;
 }
 .trending-container {
   width: 100%;
@@ -578,6 +579,9 @@ figure {
   margin: 1rem 0;
   background-color: rgb(204, 204, 204);
 }
+.cate-one{
+  font-size: 1.6rem;
+}
 .cate-images {
   width: 100%;
   text-align: center;
@@ -589,20 +593,20 @@ figure {
 .Market {
   width: 100%;
   text-align: center;
-  padding: 0.2rem;
+  padding: 2rem;
 }
 .Market a {
-  background-color: rgba(0, 0, 0, 0.664);
+  background:black;
   color: white;
   text-decoration: none;
   font-weight: 600;
-  padding: 0 2rem;
+  padding: .3rem 0.6rem;
   border-radius: 5px;
   transition: all 0.5s;
 }
 .Market a:hover {
   background-color: brown;
-  color: white;
+  color: black;
 }
 .contact-container {
   width: 100%;
@@ -810,19 +814,4 @@ figure {
 .footer-col .social_links a:hover {
   color: #24262b;
   background-color: #ffffffff;
-}
-/* responsive */
-
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
 }
