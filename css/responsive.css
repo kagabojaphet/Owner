@@ -1,36 +1,36 @@
-
 @media (max-width: 1200px) {
   html,
   body {
     overflow-x: hidden;
   }
 }
-@media (max-width: 992px){
-  .conact{
+@media (max-width: 992px) {
+  .conact {
     padding: 5rem;
   }
-  .container{
+  .container {
     flex-direction: column;
-
   }
-  .container .contact-info{
+  .container .contact-info {
     margin-bottom: 4rem;
   }
   .container .contact-info,
-  .contact-form{
+  .contact-form {
     width: 100%;
   }
-  
+}
+@media (max-width: 888px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    /* background-color: blue; */
+  }
 }
 @media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
   .services-card {
     flex-direction: column;
   }
@@ -45,28 +45,47 @@
   }
 }
 @media (max-width: 676px) {
-  .contact{
+  .contact {
     /* background-color: blue; */
     padding: 50px 20px;
   }
 }
-@media (max-width: 546px) { 
-body{
-  padding: 0;
-}  
-header{
-  left: 120%;
-}
-header.active{
-  left: 0;
-}
-body #menu-bars{
-  display: initial;
-}
+@media (max-width: 635px) {
+  .footer-col {
+    margin: 2rem;
   }
-
-@media (max-width: 392px){
-header{
-  width: 100%;
 }
+@media (max-width: 546px) {
+  body {
+    padding: 0;
+  }
+  header {
+    left: 120%;
+  }
+  header.active {
+    left: 0;
+  }
+  body #menu-bars {
+    display: initial;
+  }
+  .footer-col {
+    margin: 0;
+  }
+}
+
+@media (max-width: 392px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+@media (max-width: 200px) {
+  .footer-container {
+    width: 100%;
+    margin: 0;
+  }
 }
