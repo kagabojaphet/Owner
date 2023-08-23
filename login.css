@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: skyblue;
+}
 .slider-login{
     width: 100%;
     overflow: hidden;
@@ -37,6 +40,9 @@
     background-size: cover;
     background-attachment:local;
     object-fit:cover;
+}
+img{
+    height: 100%;
 }
 .opacity{
     position: absolute;
