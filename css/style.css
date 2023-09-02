@@ -214,6 +214,7 @@ figure {
 .about-container {
   background-color: blue;
   width: 100%;
+  position: relative;
 }
 .about {
   width: 100%;
@@ -422,6 +423,35 @@ figure {
 }
 #imgs4:checked ~ .ims4 {
   margin-left: -300%;
+}
+.popup-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(77, 77, 77,0.7);
+  transition: all .4s;
+  visibility: hidden;
+}
+.form-popup{
+  background-color:rgb(112, 56, 56);
+  width: 100%;
+  height: 100%;
+  margin: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;position: relative;
+  position: relative;
+}
+.form-popup #menu-popup{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2.5rem;
 }
 .services {
   width: 100%;
