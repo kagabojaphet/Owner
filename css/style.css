@@ -225,12 +225,14 @@ figure {
   position: relative;
   font-size: 3rem;
    width: 15%;
+   padding: 0 2rem;
 }
 .heading-title:hover {
   color: brown;
   position: relative;
 }
 .heading-title::after{
+  padding: 0 2rem;
   position: absolute;
   content: "";
   width: 100%;
