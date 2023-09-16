@@ -1,11 +1,9 @@
-import { string } from "i/lib/util";
 import mongoose from "mongoose";
 
-const userschame=new mongoose.Schema({
+const userschema=new mongoose.Schema({
     firstname:{
         type:String,
         required:true
-
     },
     lastname:{
         type:String,
@@ -17,26 +15,26 @@ const userschame=new mongoose.Schema({
     },
     email:{
         type:String,
-        unique:true,
-        required:true
+        required:true,
+        unique:true
     },
     password:{
         type:String,
         required:true
     },
-    confrimpassword:{
+    confirmpassword:{
         type:String,
-        required:true
+
     },
     role:{
         type:String,
         enum:["admin","user"],
         default:"user"
     },
-    createdate:{
+    createdat:{
         type:Date,
         default:Date.now()
     }
 })
-const USER=mongoose.model("USER",userschame)
+const USER=mongoose.model("USER",userschema)
 export default USER

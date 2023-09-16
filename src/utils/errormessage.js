@@ -3,4 +3,5 @@ const errormessage=(res,status,message)=>{
         message:message
     })
 }
+
 export default errormessage
