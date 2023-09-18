@@ -98,8 +98,7 @@ class usercontroller{
                 return errormessage(res,401,`incorrect email`)
             }
             else{
-                const token=Jwt.sign({firstname:user.firstname,lastname:user.lastname,username:user.username,email:user.email,
-                password:user.password},process.env.SCRET_KEY,{expiresIn:"1d"})
+                const token=Jwt.sign({user:user},process.env.SCRET_KEY,{expiresIn:"1d"})
 
                 res.status(200).json({
                     token:token,
