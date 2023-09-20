@@ -1,15 +1,21 @@
 import Product from "../model/product";
+import sendemail from "../utils/email";
 import errormessage from "../utils/errormessage";
 import successmessage from "../utils/successmessage";
+import USER from "../model/user";
 
 class productcontroller{
     static async createproduct(req,res){
-        const {productimage,productname,productinfo,producttype,productcost}=req.body
-        const product=await Product.create({productimage,productname,productinfo,producttype,productcost})
+        const {productimage,productname,productinfo,producttype,productcost,comment}=req.body
+        const product=await Product.create({productimage,productname,productinfo,producttype,productcost,comment})
         if(!product){
             return errormessage(res,401,`product not uploaded`)
         }
         else{
+            const users=await USER.find();
+            users.map((used)=>{
+                sendemail(used,product)
+            })
             return successmessage(res,201,`product successfuly uploqded`,product)
         }
     }

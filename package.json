@@ -4,6 +4,7 @@
   "description": "fashion",
   "main": "server.js",
   "scripts": {
+    "start": "babel-node ./src/server.js",
     "dev": "nodemon --exec babel-node ./src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,6 +33,7 @@
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.2",
+    "nodemailer": "^6.9.5",
     "nodemon": "^3.0.1"
   }
 }

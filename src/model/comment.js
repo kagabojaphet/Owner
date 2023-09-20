@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const commentschema=new mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:"Product"
+        ref:"USER"
     },
     comment:{
         type:String,

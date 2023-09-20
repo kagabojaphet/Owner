@@ -21,20 +21,20 @@ const productschema=new mongoose.Schema({
         type:String,
         required:true
     },
-  
     pastdate:{
         type:Date,
         default:Date.now()
     },
-    Comment:{
+    comment:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:"COMMENT"
-    }
+    }]
+
 })
 productschema.pre(/^find/,function(next){
     this.populate({
         path:"comment",
-        select:"creaddate"
+        select:"comment createddate"
     })
     next()
 })

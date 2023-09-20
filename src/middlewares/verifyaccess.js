@@ -1,7 +1,10 @@
 import errormessage from "../utils/errormessage";
 import Jwt,{ JsonWebTokenError } from "jsonwebtoken";
 
-const verifyaccess=async(req,res,next)=>{
+const verifyaccess=(passrole)=>{
+
+
+return(req,res,next)=>{
     const token=req.headers["kagabo"]
     if(!token){
         return errormessage(res,401,`no token provided`)
@@ -9,8 +12,9 @@ const verifyaccess=async(req,res,next)=>{
     else{
         try {
             const verifytoken=Jwt.verify(token,process.env.SCRET_KEY,{expiresIn:"1d"})
+            req.user=verifytoken.user
     
-            if(verifytoken.user.role !== "admin"){
+            if(passrole!==verifytoken.user.role){
                 return errormessage(res,401,`you not have access`)
             }
             else{
@@ -23,5 +27,6 @@ const verifyaccess=async(req,res,next)=>{
             
         }
     }
+}
 }
 export default verifyaccess
