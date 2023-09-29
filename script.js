@@ -12,17 +12,22 @@ window.onscroll = ()=>{
     header.classList.remove('active')
 }
 
-let popup = document.querySelector('#menu-popup');
-let forms = document.querySelector('.popup-container');
 
-popup.onclick = ()=>{
-    popup.classList.toggle('fa-times');
-    forms.classList.toggle('active')
-}
+// let popup = document.querySelector('#menu-popup');
+// let forms = document.querySelector('.popup-container');
+let clickme=document.querySelector(".clickme")
+clickme.addEventListener('click',()=>{
+    document.querySelector('.modal').style.display="none"
+})
+
+// popup.onclick = ()=>{
+//     popup.classList.toggle('fa-times');
+//     forms.classList.toggle('active')
+// }
 
 
-window.onscroll = ()=>{
-    popup.classList.remove('fa-times');
-    forms.classList.remove('active')
-}
+// window.onscroll = ()=>{
+//     popup.classList.remove('fa-times');
+//     forms.classList.remove('active')
+// }
 
