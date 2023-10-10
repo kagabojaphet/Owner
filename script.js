@@ -13,21 +13,17 @@ window.onscroll = ()=>{
 }
 
 
-// let popup = document.querySelector('#menu-popup');
-// let forms = document.querySelector('.popup-container');
-let clickme=document.querySelector(".clickme")
-clickme.addEventListener('click',()=>{
-    document.querySelector('.modal').style.display="none"
-})
+const openpopupbutton=document.getElementById("open-popup")
+const closepopupbutton=document.getElementById("close-popup")
+const popupcontainer=document.getElementById("popup-container")
 
-// popup.onclick = ()=>{
-//     popup.classList.toggle('fa-times');
-//     forms.classList.toggle('active')
-// }
+function openpopup(){
+    popupcontainer.style.display ="block";
+}
 
+function closepopup(){
+    popupcontainer.style.display ="none";
+}
 
-// window.onscroll = ()=>{
-//     popup.classList.remove('fa-times');
-//     forms.classList.remove('active')
-// }
-
+openpopupbutton.addEventListener("click",openpopup);
+closepopupbutton.addEventListener("click",closepopup);

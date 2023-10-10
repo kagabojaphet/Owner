@@ -428,35 +428,6 @@ figure {
 #imgs4:checked ~ .ims4 {
   margin-left: -300%;
 }
-.popup-container{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(77, 77, 77,0.7);
-  transition: all .4s;
-  
-}
-.form-popup{
-  background-color:rgb(112, 56, 56);
-  width: 100%;
-  height: 100%;
-  margin: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;position: relative;
-  position: relative;
-}
-.form-popup #menu-popup{
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 2.5rem;
-}
 .services {
   width: 100%;
   background-color: #f9f8f8f8;
@@ -848,4 +819,24 @@ transition: all .4s;
 .footer-col .social_links a:hover {
   color: #24262b;
   background-color: #ffffffff;
+}
+.popup-container{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#66666691;
+  /* padding: 20px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.popup-container i{
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  
 }
