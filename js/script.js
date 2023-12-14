@@ -13,17 +13,17 @@ window.onscroll = ()=>{
 }
 
 
-// const openpopupbutton=document.getElementById("open-popup")
-// const closepopupbutton=document.getElementById("close-popup")
-// const popupcontainer=document.getElementById("popup-container")
+const openpopupbutton=document.getElementById("open-popup")
+const closepopupbutton=document.getElementById("close-popup")
+const popupcontainer=document.getElementById("popup-container")
 
-// function openpopup(){
-//     popupcontainer.style.display ="block";
-// }
+function openpopup(){
+    popupcontainer.style.display ="block";
+}
 
-// function closepopup(){
-//     popupcontainer.style.display ="none";
-// }
+function closepopup(){
+    popupcontainer.style.display ="none";
+}
 
-// openpopupbutton.addEventListener("click",openpopup);
-// closepopupbutton.addEventListener("click",closepopup);
+openpopupbutton.addEventListener("click",openpopup);
+closepopupbutton.addEventListener("click",closepopup);
